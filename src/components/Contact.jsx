@@ -10,13 +10,13 @@ export default function Contact() {
       </p>
       <div className="flex flex-wrap gap-4">
         <a
-          href="mailto:hello@example.com"
+          href="mailto:messiovo@gmail.com"
           className="bg-teal text-white font-semibold px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
         >
           Email Me
         </a>
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/mercy-avwenagbiku"
           target="_blank"
           rel="noreferrer"
           className="border border-border text-navy font-semibold px-6 py-3 rounded-md hover:border-teal hover:text-teal transition-colors"
