@@ -9,7 +9,7 @@ export const projects = [
     projectType: "Personal Portfolio Project",
     experienceNote: "Gmail + HubSpot + administrative support experience applied",
 
-    image: "/projects/email-management/email-management.jpg",
+    image: "/projects/email-management/labelled-emails.PNG",
 
     description:
       "A workflow connecting Gmail, HubSpot and Google Calendar to organize client communication, track emails, manage follow-ups and coordinate tasks.",
@@ -66,7 +66,7 @@ export const projects = [
   category: "AI & Operations",
   projectType: "Personal Portfolio Project",
 
-  image: "/projects/meeting-tracker/meeting-1.PNG",
+  image: "/projects/meeting-tracker/clickup-board-view.PNG",
   description:
     "An AI-powered workflow using Otter.ai and ClickUp to turn meeting transcripts into structured summaries, action items and follow-ups.",
 
