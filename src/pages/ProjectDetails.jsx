@@ -45,7 +45,10 @@ export default function ProjectDetails() {
           <div className="mt-6 flex flex-wrap gap-3 text-xs">
             {project.projectType && (
               <span className="bg-white border border-border px-3 py-1.5 rounded-full text-slate">
-                {project.projectType}
+                <span className="text-slate/60">Project Type:</span>{" "}
+                <span className="font-semibold text-navy">
+                  {project.projectType}
+                </span>
               </span>
             )}
             {project.experienceNote && (

@@ -9,7 +9,7 @@ const items = [
   },
   {
     title: "AI & Automation",
-    lines: ["AI-powered workflows", "Tool setup", "Process automation"],
+    lines: ["AI-assisted workflows", "Tool setup & configuration", "Process automation"],
   },
   {
     title: "Customer Success",

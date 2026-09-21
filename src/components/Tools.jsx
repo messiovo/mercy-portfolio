@@ -7,10 +7,14 @@ const groups = [
     label: "CRM & Communication",
     items: ["HubSpot", "Slack", "Google Workspace"],
   },
-  {
-    label: "AI & Productivity",
-    items: ["ChatGPT", "Claude", "AI tools"],
-  },
+ {
+  label: "AI & Productivity",
+  items: ["ChatGPT", "Claude", "AI tools"],
+},
+{
+  label: "Automation",
+  items: ["Zapier", "Google Forms", "Process automation"],
+},
   {
     label: "Content",
     items: ["Canva", "CapCut"],

@@ -7,20 +7,17 @@ export default function About() {
       <div className="grid md:grid-cols-3 gap-10">
         <div className="md:col-span-2 space-y-4 text-slate leading-relaxed">
           <p>
-            I'm an operations and education professional with experience across
-            customer support, operations, project coordination and online
-            education.
-          </p>
-          <p>
-            I've worked with teams and clients across remote environments and
-            enjoy turning disorganized processes into clear, trackable
-            workflows.
-          </p>
-          <p>
-            Alongside my professional experience, I build practical portfolio
-            projects exploring AI, automation, project management systems and
-            productivity tools.
-          </p>
+  I'm an operations and education professional with experience across
+  customer support, operations, project coordination and online education.
+</p>
+<p>
+  I enjoy turning disorganised processes into clear workflows, coordinating
+  people and tasks, and using digital tools to improve how work gets done.
+</p>
+<p>
+  Alongside my professional experience, I build practical portfolio projects
+  exploring AI, automation, CRM systems and productivity tools.
+</p>
         </div>
         <div className="bg-white border border-border rounded-xl p-6 space-y-4 text-sm">
           <div>

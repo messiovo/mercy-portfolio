@@ -29,13 +29,14 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a
-            href="/cv.pdf"
-            download
-            className="text-sm font-semibold bg-teal text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity"
-          >
-            Download CV
-          </a>
+         <a
+  href="/cv.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="text-sm font-semibold bg-teal text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity"
+>
+  View / Download CV
+</a>
         </div>
 
         {/* Mobile hamburger */}
@@ -67,13 +68,14 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a
-            href="/cv.pdf"
-            download
-            className="text-sm font-semibold bg-teal text-white px-4 py-2 rounded-md text-center"
-          >
-            Download CV
-          </a>
+        <a
+  href="/cv.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="text-sm font-semibold bg-teal text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity"
+>
+  View / Download CV
+</a>
         </div>
       )}
     </nav>

@@ -24,10 +24,11 @@ export default function Hero() {
             </a>
             <a
               href="/cv.pdf"
-              download
+              target="_blank"
+              rel="noreferrer"
               className="border border-border text-navy font-semibold px-6 py-3 rounded-md hover:border-teal hover:text-teal transition-colors"
             >
-              Download CV
+              View / Download CV
             </a>
           </div>
         </div>
