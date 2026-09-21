@@ -12,7 +12,7 @@ export default function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/projects/:projectId" element={<ProjectDetails />} />
           </Routes>
         </div>
         <Footer />

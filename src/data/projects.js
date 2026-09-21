@@ -1,128 +1,199 @@
 export const projects = [
+  // ─────────────────────────────────────────────
+  // 1. EMAIL MANAGEMENT — full case study
+  // ─────────────────────────────────────────────
   {
-    id: "ai-meeting-tracker",
-    title: "AI-Powered Meeting Summary & Action Tracker",
-    category: "AI & Operations",
-    image: "/images/meeting-tracker.PNG",
-    shortDescription:
-      "A workflow that turns messy meeting notes into clean summaries, action items, and follow-ups.",
-    problem:
-      "Meeting information is often lost after the call ends. Action items get buried in chat threads, follow-ups slip through, and there's no single source of truth for who owes what to whom.",
-    approach:
-      "I designed a repeatable workflow where meeting recordings or transcripts are fed into an AI prompt that extracts decisions, owners, and deadlines, then formats them into a structured tracker.",
-    tools: ["ChatGPT", "Google Docs", "Notion", "Operations"],
-    built: [
-      "A reusable AI prompt template for extracting decisions, owners, and deadlines",
-      "A structured meeting tracker that keeps action items visible across weeks",
-      "A follow-up checklist so nothing gets dropped after the call",
-      "A simple dashboard showing open vs. completed actions",
+    id: "email-management",
+    title: "Email Management Using HubSpot",
+    category: "Operations & CRM",
+    projectType: "Personal Portfolio Project",
+    experienceNote: "Gmail + HubSpot + administrative support experience applied",
+
+    image: "/projects/email-management/email-management.jpg",
+
+    description:
+      "A workflow connecting Gmail, HubSpot and Google Calendar to organize client communication, track emails, manage follow-ups and coordinate tasks.",
+
+    overview:
+      "This portfolio project demonstrates a structured email and CRM workflow using Gmail, HubSpot and Google Calendar. The system organizes client communication, tracks emails and follow-ups, creates CRM contacts, manages tasks and connects reminders with the calendar.",
+
+    workflow: [
+      { step: "Gmail", detail: "Inbox & Labels" },
+      { step: "HubSpot", detail: "Contacts → Email → Tasks" },
+      { step: "Google Calendar", detail: "Reminders & Scheduling" },
     ],
-    learned:
-      "I learned that the AI part is the easy part. The real value is designing the workflow around it so a team actually uses it consistently.",
+
+    tools: ["Gmail", "HubSpot", "Google Calendar"],
+
+    video: "/projects/email-management/email-management.mp4",
+    pdf: "/projects/email-management/email-management.pdf",
+
+    gallery: [
+      {
+        label: "Gmail & Inbox Management",
+        images: ["/projects/email-management/labelled-emails.PNG"],
+      },
+      {
+        label: "HubSpot CRM",
+        images: [
+          "/projects/email-management/hubspot-contact.PNG",
+          "/projects/email-management/contact-summary.PNG",
+          "/projects/email-management/deal-stage.PNG",
+          "/projects/email-management/new-deal-list.PNG",
+        ],
+      },
+      {
+        label: "Email Tracking & Follow-Up",
+        images: ["/projects/email-management/creating-email.PNG"],
+      },
+      {
+        label: "Tasks & Calendar",
+        images: [
+          "/projects/email-management/task-view.PNG",
+          "/projects/email-management/task-view-2.PNG",
+          "/projects/email-management/calendar-connected.PNG",
+        ],
+      },
+    ],
   },
+
+  // ─────────────────────────────────────────────
+  // 2–6. IMAGE-ONLY PROJECTS — keep them short
+  // ─────────────────────────────────────────────
+ {
+  id: "meeting-tracker",
+  title: "AI-Powered Meeting Summary & Action Tracker",
+  category: "AI & Operations",
+  projectType: "Personal Portfolio Project",
+
+  image: "/projects/meeting-tracker/meeting-1.PNG",
+  description:
+    "An AI-powered workflow using Otter.ai and ClickUp to turn meeting transcripts into structured summaries, action items and follow-ups.",
+
+  overview:
+    "This project explores how AI meeting tools can be combined with a task management system to capture what was discussed, who owns what, and when follow-ups are due — without relying on manual note-taking.",
+
+  tools: ["Otter.ai", "ChatGPT", "ClickUp", "Operations"],
+
+  gallery: [
+    {
+      label: "Meeting Capture & Transcript",
+      images: [
+        "/projects/meeting-tracker/meeting-1.PNG",
+        "/projects/meeting-tracker/transcript-view-otter-1.png",
+        "/projects/meeting-tracker/transcript-view-otter-2.png",
+        "/projects/meeting-tracker/transcript-view-otter-3.png",
+      ],
+    },
+    {
+      label: "AI-Generated Summaries",
+      images: [
+        "/projects/meeting-tracker/summary-general-1.PNG",
+        "/projects/meeting-tracker/summary-general-2.PNG",
+        "/projects/meeting-tracker/summary-team-meeting.PNG",
+      ],
+    },
+    {
+      label: "Action Tracking in ClickUp",
+      images: [
+        "/projects/meeting-tracker/clickup-board-view.PNG",
+        "/projects/meeting-tracker/clickup-list-view.PNG",
+        "/projects/meeting-tracker/clickup-calendar-view.PNG",
+      ],
+    },
+  ],
+},
   {
     id: "client-onboarding",
     title: "Automated Client Onboarding Workflow",
     category: "Operations & Automation",
-    image: "/images/client-onboarding.PNG",
-    shortDescription:
+    projectType: "Personal Portfolio Project",
+
+    image: "/projects/client-onboarding/onboarding-1.png",
+    description:
       "A structured onboarding system that moves new clients from signed to settled without chaos.",
-    problem:
-      "New client onboarding was inconsistent. Welcome emails went out late, documents got lost, and no one knew which stage a client was in.",
-    approach:
-      "I mapped the entire onboarding journey, identified where things broke down, and rebuilt it as a step-by-step workflow with clear owners and checkpoints.",
-    tools: ["Notion", "Google Workspace", "Automation", "Operations"],
-    built: [
-      "A stage-based onboarding checklist from welcome to first review",
-      "Templated welcome emails and intake forms",
-      "A tracker showing every client's current onboarding stage",
-      "A handover document so any team member can pick up mid-onboarding",
+
+    tools: ["Notion", "Google Workspace", "Operations"],
+
+    gallery: [
+      {
+        label: "Screenshots",
+        images: [
+          "/projects/client-onboarding/onboarding-1.PNG",
+          "/projects/client-onboarding/onboarding-2.PNG",
+        ],
+      },
     ],
-    learned:
-      "I learned that consistency comes from documentation. If a process only lives in someone's head, it isn't a process.",
   },
+
   {
     id: "content-calendar",
     title: "Social Media Content Calendar System",
     category: "Notion & Operations",
-    image: "/images/content-calendar.PNG",
-    shortDescription:
-      "A content planning system that keeps ideas, drafts, approvals, and posts in one place.",
-    problem:
-      "Content was being created reactively. Ideas were scattered, approvals happened in DMs, and posting was inconsistent.",
-    approach:
-      "I built a Notion-based calendar with clear stages: Idea → Draft → Review → Scheduled → Posted, so every piece of content has a visible home.",
+    projectType: "Personal Portfolio Project",
+
+    image: "/projects/content-calendar/calendar-1.png",
+    description:
+      "A content planning system that keeps ideas, drafts, approvals and posts in one place.",
+
     tools: ["Notion", "Canva", "Operations"],
-    built: [
-      "A content calendar database with status stages",
-      "A content idea bank organised by theme",
-      "A simple approval workflow inside Notion",
-      "A weekly review checklist to keep the pipeline moving",
+
+    gallery: [
+      {
+        label: "Screenshots",
+        images: [
+          "/projects/content-calendar/calendar-1.PNG",
+          "/projects/content-calendar/calendar-2.PNG",
+        ],
+      },
     ],
-    learned:
-      "I learned that a calendar doesn't just organise content — it changes how you think about it. You stop reacting and start planning.",
   },
+
   {
     id: "crm-trello",
     title: "CRM & Trello Client Management System",
     category: "CRM & Project Management",
-    image: "/images/crm-trello.PNG",
-    shortDescription:
-      "A lightweight CRM and Trello board for tracking clients, deals, and ongoing work.",
-    problem:
-      "Client information lived in spreadsheets, emails, and memory. Nobody could see the full picture of where a client relationship stood.",
-    approach:
-      "I built a simple CRM in a spreadsheet and paired it with a Trello board for active work, so pipeline and delivery stayed connected.",
-    tools: ["Trello", "Google Sheets", "CRM", "Project Management"],
-    built: [
-      "A CRM sheet with client details, deal stage, and last contact",
-      "A Trello board mapping active work by client",
-      "A weekly review process to keep records current",
-      "A simple reporting view for pipeline health",
+    projectType: "Personal Portfolio Project",
+
+    image: "/projects/crm-trello/crm-1.PNG",
+    description:
+      "A lightweight CRM and Trello board for tracking clients, deals and ongoing work.",
+
+    tools: ["Trello", "Google Sheets", "CRM"],
+
+    gallery: [
+      {
+        label: "Screenshots",
+        images: [
+          "/projects/crm-trello/crm-1.PNG",
+          "/projects/crm-trello/crm-2.PNG",
+        ],
+      },
     ],
-    learned:
-      "I learned that a CRM only works if updating it is easier than not updating it. Friction kills adoption.",
   },
+
   {
     id: "calendar-management",
     title: "Calendar Management System",
     category: "Administration & Productivity",
-    image: "/images/calendar-management.PNG",
-    shortDescription:
-      "A calendar and scheduling system that protects focus time and keeps meetings meaningful.",
-    problem:
-      "The calendar was reactive — meetings piled up, focus time disappeared, and scheduling was a back-and-forth mess.",
-    approach:
-      "I designed a calendar system with clear rules: themed days, protected focus blocks, and a scheduling link to remove the back-and-forth.",
-    tools: ["Google Calendar", "Scheduling Tools", "Productivity"],
-    built: [
-      "A weekly calendar template with focus and meeting blocks",
-      "A scheduling link to reduce email back-and-forth",
-      "A meeting intake form so calls have a clear purpose",
-      "A weekly review habit to keep the calendar honest",
+    projectType: "Personal Portfolio Project",
+
+    image: "/projects/calendar-management/calendar-1.png",
+    description:
+      "A calendar and scheduling system that protects focus time and keeps meetings purposeful.",
+
+    tools: ["Google Calendar", "Scheduling", "Productivity"],
+
+    gallery: [
+      {
+        label: "Screenshots",
+        images: [
+          "/projects/calendar-management/calendar-1.PNG",
+          "/projects/calendar-management/calendar-2.PNG",
+        ],
+      },
     ],
-    learned:
-      "I learned that a calendar is an operations document. How you structure your time is how you structure your work.",
-  },
-  {
-    id: "email-management",
-    title: "Email Management System",
-    category: "Operations & Administration",
-    image: "/images/email-management.PNG",
-    shortDescription:
-      "An inbox system that turns email from a source of stress into a controlled workflow.",
-    problem:
-      "The inbox was being used as a to-do list. Important emails got buried, nothing got archived, and every morning felt like starting over.",
-    approach:
-      "I built a simple system: labels for action, waiting, and reference; a daily triage routine; and templates for common replies.",
-    tools: ["Gmail", "Templates", "Operations"],
-    built: [
-      "A label structure for action, waiting, and reference emails",
-      "A daily triage routine (clear, action, or archive)",
-      "Reply templates for common messages",
-      "A weekly inbox review to catch anything slipping",
-    ],
-    learned:
-      "I learned that an inbox is not a task manager. The moment you stop treating it like one, it stops feeling overwhelming.",
   },
 ];
+
+export default projects;
