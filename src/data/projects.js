@@ -1,6 +1,66 @@
 export const projects = [
+ // ─────────────────────────────────────────────
+  // 1. RECRUITMENT APPLICATION & SCREENING SYSTEM
   // ─────────────────────────────────────────────
-  // 1. EMAIL MANAGEMENT — full case study
+  {
+    id: "recruitment-application",
+    title: "Recruitment Application & Screening System",
+    subtitle: "People Operations · Recruitment · Systems Design",
+    category: "People Operations & Systems",
+    projectType: "Business Operations / People Operations Project — CuriousLab Academy",
+
+    image: "/projects/recruitment-application/pic1.png",
+
+    description:
+      "A lightweight ATS-style recruitment application and screening system built for CuriousLab Academy to make hiring more structured and easier to manage.",
+
+    overview:
+      "A lightweight ATS-style recruitment application and screening system I built for CuriousLab Academy to make hiring more structured and easier to manage.",
+
+    challenge:
+      "When recruiting for a part-time role, I wanted to move away from collecting candidate information through individual emails and manage applications through a more structured process.",
+
+    whatIBuilt:
+      "I built a dedicated application system on the CuriousLab website where candidates could submit their information and application in one place. The system provided a more organized way to collect and review applications during the recruitment process.",
+
+    myRole: [
+      "Designed the recruitment application flow",
+      "Built the candidate-facing application page",
+      "Structured the information collected from applicants",
+      "Reviewed submitted applications",
+      "Selected the successful candidate",
+      "Prepared the employment agreement",
+      "Managed onboarding",
+    ],
+
+    outcome:
+      "The system gave me a more centralized and structured recruitment process, from application collection through screening and selection.",
+
+    tools: ["React", "Vite", "Tailwind CSS", "Firebase"],
+
+    gallery: [
+      {
+        label: "01 — Candidate Application Interface",
+        images: [
+          "/projects/recruitment-application/pic2.png",
+        ],
+      },
+      {
+        label: "02 — Application Management / Screening",
+        images: [
+          "/projects/recruitment-application/pic3.png",
+        ],
+      },
+      {
+        label: "03 — Backend codes",
+        images: [
+          "/projects/recruitment-application/pic4.png",
+        ],
+      },
+    ],
+  },
+  // ─────────────────────────────────────────────
+  // 2. EMAIL MANAGEMENT — full case study
   // ─────────────────────────────────────────────
   {
     id: "email-management",
@@ -58,7 +118,7 @@ export const projects = [
   },
 
   // ─────────────────────────────────────────────
-  // 2. MEETING TRACKER
+  // 3. MEETING TRACKER
   // ─────────────────────────────────────────────
   {
     id: "meeting-tracker",
@@ -105,7 +165,7 @@ export const projects = [
   },
 
   // ─────────────────────────────────────────────
-  // 3. CLIENT ONBOARDING
+  // 4. CLIENT ONBOARDING
   // ─────────────────────────────────────────────
   {
     id: "client-onboarding",
@@ -175,7 +235,7 @@ export const projects = [
   },
 
   // ─────────────────────────────────────────────
-  // 4. CONTENT CALENDAR
+  // 5. CONTENT CALENDAR
   // ─────────────────────────────────────────────
   {
     id: "content-calendar",
@@ -237,7 +297,7 @@ export const projects = [
   },
 
   // ─────────────────────────────────────────────
-  // 5. CRM / ZAPIER LEAD CAPTURE
+  // 6. CRM / ZAPIER LEAD CAPTURE
   // ─────────────────────────────────────────────
   {
     id: "crm-trello",
@@ -302,7 +362,7 @@ export const projects = [
   },
 
   // ─────────────────────────────────────────────
-  // 6. CALENDAR MANAGEMENT
+  // 7. CALENDAR MANAGEMENT
   // ─────────────────────────────────────────────
   {
     id: "calendar-management",

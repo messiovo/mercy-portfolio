@@ -34,9 +34,16 @@ export default function ProjectDetails() {
         <p className="text-xs font-semibold text-teal uppercase tracking-wide mb-3">
           {project.category}
         </p>
-        <h1 className="text-3xl md:text-5xl font-extrabold text-navy leading-tight mb-6">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-navy leading-tight mb-4">
           {project.title}
         </h1>
+
+        {project.subtitle && (
+          <p className="text-sm md:text-base text-slate/80 font-medium mb-6">
+            {project.subtitle}
+          </p>
+        )}
+
         <p className="text-lg text-slate max-w-3xl leading-relaxed">
           {project.description}
         </p>
@@ -132,9 +139,21 @@ export default function ProjectDetails() {
         </Section>
       )}
 
+      {project.challenge && (
+        <Section title="The Challenge">
+          <p>{project.challenge}</p>
+        </Section>
+      )}
+
       {project.approach && (
         <Section title="The Approach">
           <p>{project.approach}</p>
+        </Section>
+      )}
+
+      {project.whatIBuilt && (
+        <Section title="What I Built">
+          <p>{project.whatIBuilt}</p>
         </Section>
       )}
 
@@ -148,6 +167,25 @@ export default function ProjectDetails() {
               </li>
             ))}
           </ul>
+        </Section>
+      )}
+
+      {project.myRole && project.myRole.length > 0 && (
+        <Section title="My Role">
+          <ul className="space-y-3">
+            {project.myRole.map((item) => (
+              <li key={item} className="flex gap-3">
+                <span className="text-teal font-bold">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {project.outcome && (
+        <Section title="Outcome">
+          <p>{project.outcome}</p>
         </Section>
       )}
 
@@ -172,7 +210,6 @@ export default function ProjectDetails() {
                 <h3 className="font-bold text-navy mb-5 text-lg">
                   {group.label}
                 </h3>
-                {/* Single column so UI screenshots stay readable */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {group.images.map((image, index) => (
                     <ScreenshotImage

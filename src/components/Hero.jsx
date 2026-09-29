@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="grid md:grid-cols-3 gap-12 items-center">
         <div className="md:col-span-2">
           <p className="text-teal font-semibold text-sm tracking-wide uppercase mb-4">
-            AI • Automation • Customer Success
+            OPERATIONS • AI • AUTOMATION • CUSTOMER SUCCESS
           </p>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight text-navy mb-6">
             Operations &<br />

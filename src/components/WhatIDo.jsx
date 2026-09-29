@@ -1,7 +1,7 @@
 const items = [
   {
     title: "Operations",
-    lines: ["Workflow improvement", "Process documentation", "Systems building"],
+    lines: ["Workflow improvement", "Process documentation", "People & systems coordination"],
   },
   {
     title: "Project Coordination",
@@ -13,7 +13,7 @@ const items = [
   },
   {
     title: "Customer Success",
-    lines: ["Client communication", "Support & coordination", "Onboarding"],
+    lines: ["Client communication", "Support & coordination", "Onboarding & stakeholder support"],
   },
 ];
 
